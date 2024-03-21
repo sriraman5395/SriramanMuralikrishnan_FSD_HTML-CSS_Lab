@@ -1,0 +1,70 @@
+body{
+    height: auto;
+    margin: 0;
+}
+
+header{
+    background-color: red;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+#navigate{
+    position:sticky;
+    z-index:1;
+
+}
+
+.menu{
+    background-color: rgb(158, 157, 157);
+    margin: 0;
+}
+ 
+.menu li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;   
+}
+
+.menu li:hover{
+    background-color: rgb(33, 32, 32); 
+}
+
+.menu li:nth-child(2):hover .dropdown, .menu li:nth-child(3):hover .dropdown{
+    display: block;
+}
+
+.dropdown{
+   display: none;
+   background-color: white;
+   position: absolute;
+   top: 45px;
+   max-width: 150px;
+   padding: 0;
+}
+
+.dropdown li{
+    display: block;
+
+}
+
+.dropdown li:hover{
+    background-color: gainsboro;
+
+}
+
+.dropdown li a{
+    color: steelblue;
+    font-size: 16px;
+
+}
+
+
